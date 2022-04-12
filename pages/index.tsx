@@ -5,12 +5,22 @@ export default function Home() {
     return (
         <div className={styles.container}>
             <Head>
-                <title>Plug'n'play... works?</title>
+                <title>Plug'n'Play... works?</title>
                 <meta
                     name="description"
-                    content="Plug'n'Play support website"
+                    content="Yarn Plug'n'Play compatibility tracker."
                 />
             </Head>
+
+            <div className={styles["github-ribbon"]}>
+                <a
+                    target="_blank"
+                    rel="noopener"
+                    href="https://github.com/rdilweb/plugnplay.works"
+                >
+                    Fork/Star on GitHub
+                </a>
+            </div>
 
             <main className={styles.main}>
                 <h1 className={styles.title}>
@@ -18,7 +28,8 @@ export default function Home() {
                 </h1>
 
                 <p className={styles.description}>
-                    Some major projects and developer tools, namely TypeScript and VSCode, don't support Plug'n'Play without help.
+                    Some major projects and developer tools, namely TypeScript
+                    and VSCode, don't support Plug'n'Play without help.
                 </p>
 
                 <div className={styles.grid}>
@@ -28,17 +39,19 @@ export default function Home() {
                     >
                         <h2>TypeScript &rarr;</h2>
                         <p>
-                            Please upvote the PR and ping the maintainers asking them to take another look.
+                            Please upvote the PR let the maintainers know that
+                            we care.
                         </p>
                     </a>
 
                     <a
-                        href="https://github.com/microsoft/vscode/pull/99486"
+                        href="https://github.com/microsoft/vscode/issues/75559"
                         className={styles.card}
                     >
                         <h2>VSCode &rarr;</h2>
                         <p>
-                            Tell VSCode to support zip-based filesystems natively, instead of through a plugin.
+                            Tell VSCode to support zip-based filesystems
+                            natively, instead of through a plugin.
                         </p>
                     </a>
                 </div>
